@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPWindow – Solusi Kaca & Jendela Premium untuk Hunian & Komersial</title>
+  <meta name="description" content="GPWindow adalah distributor dan installer kaca, jendela, dan pintu aluminium premium terpercaya di Indonesia. Produk berkualitas tinggi dengan garansi resmi dan layanan profesional.">
+  <meta name="keywords" content="jendela aluminium, kaca tempered, pintu kaca, jendela upvc, kaca film, partisi kaca, gpwindow, kaca premium indonesia">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://gpwindow.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="GPWindow – Solusi Kaca & Jendela Premium">
+  <meta property="og:description" content="Distributor dan installer kaca, jendela, dan pintu aluminium premium terpercaya di Indonesia.">
+  <meta property="og:url" content="https://gpwindow.com/">
+  <meta property="og:image" content="https://gpwindow.com/assets/og-image.jpg">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:site_name" content="GPWindow">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GPWindow – Solusi Kaca & Jendela Premium">
+  <meta name="twitter:description" content="Distributor dan installer kaca, jendela, dan pintu aluminium premium di Indonesia.">
+  <meta name="twitter:image" content="https://gpwindow.com/assets/og-image.jpg">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "GPWindow",
+    "url": "https://gpwindow.com",
+    "description": "Distributor dan installer kaca, jendela, dan pintu aluminium premium terpercaya di Indonesia.",
+    "telephone": "+62-21-5550-1234",
+    "email": "info@gpwindow.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jl. Industri Raya No. 88",
+      "addressLocality": "Jakarta Barat",
+      "addressRegion": "DKI Jakarta",
+      "postalCode": "11740",
+      "addressCountry": "ID"
+    },
+    "openingHours": "Mo-Sa 08:00-17:00",
+    "image": "https://gpwindow.com/assets/og-image.jpg",
+    "priceRange": "$$",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "248"
+    }
+  }
+  </script>
+
+  <style>
+/* =============================================
+   GPWindow — Main Stylesheet
+   ============================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --navy: #0B1F3A;
+  --steel: #1E3A5F;
+  --sky: #2D7DD2;
+  --ice: #A8D5F0;
+  --gold: #F0A500;
+  --white: #F7FAFC;
+  --gray-100: #EDF2F7;
+  --gray-300: #CBD5E0;
+  --gray-500: #718096;
+  --gray-700: #2D3748;
+  --text: #1A202C;
+  --radius: 6px;
+  --shadow: 0 4px 24px rgba(11,31,58,0.10);
+  --transition: 0.22s cubic-bezier(.4,0,.2,1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--white);
+  color: var(--text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---- Typography ---- */
+h1,h2,h3,h4,h5,h6 { font-family: 'Syne', sans-serif; line-height: 1.2; color: var(--navy); }
+h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); font-weight: 800; }
+h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 700; }
+h3 { font-size: 1.3rem; font-weight: 600; }
+p { margin-bottom: 1rem; color: var(--gray-700); }
+a { color: var(--sky); text-decoration: none; transition: color var(--transition); }
+a:hover { color: var(--gold); }
+img { max-width: 100%; display: block; }
+
+.container { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+.section { padding: 80px 0; }
+.section-sm { padding: 48px 0; }
+
+/* ---- Buttons ---- */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: var(--radius);
+  font-family: 'Syne', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all var(--transition);
+  letter-spacing: 0.02em;
+}
+.btn-primary { background: var(--sky); color: #fff; }
+.btn-primary:hover { background: var(--navy); color: #fff; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(45,125,210,0.3); }
+.btn-outline { background: transparent; color: var(--sky); border-color: var(--sky); }
+.btn-outline:hover { background: var(--sky); color: #fff; }
+.btn-gold { background: var(--gold); color: var(--navy); }
+.btn-gold:hover { background: #d4900a; color: var(--navy); transform: translateY(-2px); }
+
+/* ---- Navbar ---- */
+.navbar {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(11,31,58,0.97);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(168,213,240,0.12);
+  padding: 0;
+}
+.nav-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 68px;
+}
+.nav-logo {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+.nav-logo span { color: var(--gold); }
+.nav-links { display: flex; gap: 8px; list-style: none; }
+.nav-links a {
+  color: rgba(255,255,255,0.82);
+  font-size: 0.92rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  transition: all var(--transition);
+}
+.nav-links a:hover, .nav-links a.active { background: var(--sky); color: #fff; }
+.nav-cta .btn { padding: 9px 22px; font-size: 0.88rem; }
+.hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+.hamburger span { display: block; width: 24px; height: 2px; background: #fff; margin: 5px 0; transition: all var(--transition); }
+
+/* ---- Hero ---- */
+.hero {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--steel) 60%, #163c6e 100%);
+  min-height: 92vh;
+  display: flex; align-items: center;
+  position: relative; overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232D7DD2' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.hero-content { position: relative; z-index: 2; max-width: 700px; }
+.hero-eyebrow {
+  display: inline-block;
+  background: rgba(240,165,0,0.15);
+  color: var(--gold);
+  border: 1px solid rgba(240,165,0,0.3);
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.hero h1 { color: #fff; margin-bottom: 20px; }
+.hero h1 .accent { color: var(--gold); }
+.hero-sub { font-size: 1.1rem; color: rgba(255,255,255,0.75); margin-bottom: 36px; max-width: 520px; }
+.hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+.hero-visual {
+  position: absolute; right: -60px; top: 50%; transform: translateY(-50%);
+  width: 500px; opacity: 0.07; pointer-events: none;
+}
+.hero-stats {
+  display: flex; gap: 48px; margin-top: 64px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+.hero-stat-num { font-family: 'Syne', sans-serif; font-size: 2rem; font-weight: 800; color: var(--gold); }
+.hero-stat-label { font-size: 0.85rem; color: rgba(255,255,255,0.6); }
+
+/* ---- Section Labels ---- */
+.label {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--sky);
+  margin-bottom: 10px;
+}
+
+/* ---- Cards ---- */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid var(--gray-100);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(11,31,58,0.14); }
+.card-img { width: 100%; height: 200px; object-fit: cover; background: var(--gray-100); }
+.card-body { padding: 24px; }
+.card-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 10px;
+  border-radius: 30px;
+  background: rgba(45,125,210,0.1);
+  color: var(--sky);
+  margin-bottom: 12px;
+}
+.card-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 10px; color: var(--navy); }
+.card-title a { color: inherit; }
+.card-title a:hover { color: var(--sky); }
+.card-meta { font-size: 0.8rem; color: var(--gray-500); display: flex; gap: 12px; align-items: center; margin-bottom: 12px; }
+.card-meta svg { width: 14px; height: 14px; }
+.card-excerpt { font-size: 0.9rem; color: var(--gray-500); line-height: 1.6; }
+.card-footer { padding: 16px 24px; border-top: 1px solid var(--gray-100); }
+
+/* ---- Grid ---- */
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+
+/* ---- Services / Features ---- */
+.feature-icon {
+  width: 52px; height: 52px;
+  background: linear-gradient(135deg, var(--sky) 0%, var(--navy) 100%);
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 18px;
+}
+.feature-icon svg { width: 26px; height: 26px; fill: #fff; }
+
+/* ---- Blog Post ---- */
+.post-hero {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--steel) 100%);
+  padding: 100px 0 60px;
+  color: #fff;
+}
+.post-hero h1 { color: #fff; font-size: clamp(1.8rem, 4vw, 3rem); }
+.post-meta { display: flex; gap: 20px; align-items: center; color: rgba(255,255,255,0.65); font-size: 0.88rem; margin-top: 16px; flex-wrap: wrap; }
+.post-tag-inline {
+  background: var(--gold); color: var(--navy);
+  padding: 3px 12px; border-radius: 30px;
+  font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;
+}
+.post-content { max-width: 760px; margin: 0 auto; padding: 60px 0; }
+.post-content h2 { margin: 2.4rem 0 1rem; }
+.post-content h3 { margin: 2rem 0 0.8rem; }
+.post-content ul, .post-content ol { margin: 1rem 0 1rem 1.6rem; }
+.post-content li { margin-bottom: 0.5rem; color: var(--gray-700); }
+.post-content blockquote {
+  border-left: 4px solid var(--gold);
+  padding: 12px 24px;
+  margin: 2rem 0;
+  background: rgba(240,165,0,0.06);
+  border-radius: 0 6px 6px 0;
+}
+.post-content blockquote p { color: var(--navy); font-style: italic; font-size: 1.05rem; margin: 0; }
+.post-img { width: 100%; height: 400px; object-fit: cover; border-radius: 10px; margin: 2rem 0; background: var(--gray-100); display: flex; align-items: center; justify-content: center; }
+.post-img-placeholder { font-size: 3rem; }
+
+/* ---- Comments ---- */
+.comments-section { background: var(--gray-100); padding: 60px 0; }
+.comment-list { display: flex; flex-direction: column; gap: 20px; margin-bottom: 40px; }
+.comment-item {
+  background: #fff;
+  border-radius: 10px;
+  padding: 24px;
+  border: 1px solid var(--gray-300);
+}
+.comment-header { display: flex; gap: 14px; align-items: flex-start; margin-bottom: 12px; }
+.comment-avatar {
+  width: 44px; height: 44px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1rem; color: #fff;
+  flex-shrink: 0;
+}
+.comment-name { font-weight: 600; font-size: 0.95rem; color: var(--navy); }
+.comment-date { font-size: 0.78rem; color: var(--gray-500); }
+.comment-body { font-size: 0.92rem; color: var(--gray-700); line-height: 1.65; }
+.comment-verified {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 0.72rem; font-weight: 600; color: #38a169;
+  background: rgba(56,161,105,0.08); padding: 2px 8px; border-radius: 20px;
+}
+
+.comment-form {
+  background: #fff;
+  border-radius: 10px;
+  padding: 32px;
+  border: 1px solid var(--gray-300);
+}
+.comment-form h3 { margin-bottom: 20px; font-size: 1.2rem; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.form-group label { font-size: 0.85rem; font-weight: 600; color: var(--navy); }
+.form-group input, .form-group textarea {
+  border: 1.5px solid var(--gray-300);
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.92rem;
+  transition: border-color var(--transition);
+  resize: none;
+  outline: none;
+  color: var(--text);
+}
+.form-group input:focus, .form-group textarea:focus { border-color: var(--sky); box-shadow: 0 0 0 3px rgba(45,125,210,0.12); }
+.form-group textarea { height: 110px; }
+
+/* ---- Breadcrumb ---- */
+.breadcrumb { padding: 16px 0; }
+.breadcrumb ol { display: flex; gap: 8px; list-style: none; font-size: 0.85rem; align-items: center; flex-wrap: wrap; }
+.breadcrumb li { display: flex; align-items: center; gap: 8px; color: var(--gray-500); }
+.breadcrumb li a { color: var(--sky); }
+.breadcrumb li:not(:last-child)::after { content: '/'; color: var(--gray-300); }
+
+/* ---- Sidebar ---- */
+.post-layout { display: grid; grid-template-columns: 1fr 300px; gap: 48px; align-items: start; }
+.sidebar { position: sticky; top: 88px; }
+.sidebar-widget {
+  background: #fff;
+  border: 1px solid var(--gray-100);
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow);
+}
+.sidebar-widget h4 { font-size: 1rem; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--gold); }
+.recent-post-item { display: flex; gap: 12px; margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px solid var(--gray-100); }
+.recent-post-item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+.recent-post-thumb { width: 60px; height: 52px; border-radius: 6px; background: var(--gray-100); flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; }
+.recent-post-title { font-size: 0.85rem; font-weight: 600; line-height: 1.4; color: var(--navy); }
+.recent-post-date { font-size: 0.75rem; color: var(--gray-500); margin-top: 4px; }
+.tag-cloud { display: flex; flex-wrap: wrap; gap: 8px; }
+.tag-pill {
+  padding: 5px 12px;
+  border-radius: 20px;
+  background: var(--gray-100);
+  color: var(--gray-700);
+  font-size: 0.78rem;
+  font-weight: 500;
+  transition: all var(--transition);
+  cursor: pointer;
+}
+.tag-pill:hover { background: var(--sky); color: #fff; }
+
+/* ---- Footer ---- */
+.footer { background: var(--navy); color: rgba(255,255,255,0.75); padding: 64px 0 0; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+.footer-brand h3 { color: #fff; font-size: 1.4rem; margin-bottom: 12px; }
+.footer-brand h3 span { color: var(--gold); }
+.footer-brand p { font-size: 0.88rem; line-height: 1.65; }
+.footer-col h4 { color: #fff; font-size: 0.95rem; margin-bottom: 16px; }
+.footer-col ul { list-style: none; }
+.footer-col li { margin-bottom: 10px; }
+.footer-col a { color: rgba(255,255,255,0.65); font-size: 0.88rem; transition: color var(--transition); }
+.footer-col a:hover { color: var(--gold); }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 20px 0;
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 0.82rem;
+}
+.social-links { display: flex; gap: 12px; }
+.social-link {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  display: flex; align-items: center; justify-content: center;
+  transition: all var(--transition);
+  color: rgba(255,255,255,0.65);
+}
+.social-link:hover { background: var(--sky); color: #fff; }
+
+/* ---- About ---- */
+.about-hero { background: linear-gradient(135deg, var(--navy) 0%, var(--steel) 100%); padding: 100px 0; color: #fff; }
+.about-hero h1 { color: #fff; }
+.team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; }
+.team-card { text-align: center; }
+.team-avatar {
+  width: 100px; height: 100px;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2.4rem;
+  background: linear-gradient(135deg, var(--sky), var(--navy));
+}
+.team-name { font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+.team-role { font-size: 0.85rem; color: var(--gray-500); }
+.timeline { position: relative; padding-left: 32px; }
+.timeline::before { content: ''; position: absolute; left: 8px; top: 0; bottom: 0; width: 2px; background: var(--gray-300); }
+.timeline-item { position: relative; margin-bottom: 32px; }
+.timeline-item::before {
+  content: ''; position: absolute;
+  left: -28px; top: 6px;
+  width: 12px; height: 12px;
+  border-radius: 50%; background: var(--sky);
+  border: 2px solid #fff; box-shadow: 0 0 0 2px var(--sky);
+}
+.timeline-year { font-family: 'Syne', sans-serif; font-size: 0.8rem; font-weight: 700; color: var(--sky); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px; }
+.timeline-title { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+.timeline-desc { font-size: 0.88rem; color: var(--gray-500); }
+
+/* ---- Contact ---- */
+.contact-hero { background: linear-gradient(135deg, var(--navy) 0%, var(--steel) 100%); padding: 100px 0; color: #fff; }
+.contact-hero h1 { color: #fff; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+.contact-form {
+  background: #fff;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: var(--shadow);
+}
+.contact-info-item { display: flex; gap: 16px; margin-bottom: 32px; }
+.contact-icon {
+  width: 48px; height: 48px; border-radius: 10px;
+  background: rgba(45,125,210,0.1);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.contact-icon svg { width: 22px; height: 22px; fill: var(--sky); }
+
+/* ---- Blog Index ---- */
+.blog-hero { background: linear-gradient(135deg, var(--navy) 0%, var(--steel) 100%); padding: 80px 0; color: #fff; }
+.blog-hero h1 { color: #fff; }
+.blog-filters { display: flex; gap: 10px; flex-wrap: wrap; margin: 24px 0; }
+.filter-btn {
+  padding: 7px 18px;
+  border-radius: 30px;
+  border: 1.5px solid var(--gray-300);
+  background: #fff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition);
+  color: var(--gray-700);
+}
+.filter-btn:hover, .filter-btn.active { background: var(--sky); border-color: var(--sky); color: #fff; }
+
+/* ---- Testimonials ---- */
+.testimonial-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 28px;
+  border: 1px solid var(--gray-100);
+  box-shadow: var(--shadow);
+  position: relative;
+}
+.testimonial-card::before {
+  content: '"';
+  font-family: 'Syne', sans-serif;
+  font-size: 5rem;
+  line-height: 1;
+  color: var(--gold);
+  position: absolute;
+  top: 10px; left: 20px;
+  opacity: 0.2;
+}
+.testimonial-text { font-size: 0.95rem; color: var(--gray-700); line-height: 1.7; margin-bottom: 20px; font-style: italic; }
+.testimonial-author { display: flex; align-items: center; gap: 12px; }
+.testi-avatar { width: 42px; height: 42px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.95rem; color: #fff; }
+.testi-name { font-weight: 700; font-size: 0.9rem; color: var(--navy); }
+.testi-company { font-size: 0.78rem; color: var(--gray-500); }
+.stars { color: var(--gold); font-size: 0.85rem; margin-bottom: 14px; letter-spacing: 2px; }
+
+/* ---- CTA Banner ---- */
+.cta-banner {
+  background: linear-gradient(135deg, var(--sky) 0%, var(--navy) 100%);
+  padding: 72px 0;
+  text-align: center;
+  position: relative; overflow: hidden;
+}
+.cta-banner::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23fff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");
+}
+.cta-banner h2 { color: #fff; margin-bottom: 14px; }
+.cta-banner p { color: rgba(255,255,255,0.8); margin-bottom: 32px; max-width: 500px; margin-left: auto; margin-right: auto; }
+
+/* ---- Pagination ---- */
+.pagination { display: flex; gap: 8px; justify-content: center; margin-top: 48px; }
+.page-btn {
+  width: 40px; height: 40px;
+  border-radius: var(--radius);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.9rem; font-weight: 500;
+  border: 1.5px solid var(--gray-300);
+  color: var(--gray-700);
+  transition: all var(--transition);
+  cursor: pointer;
+}
+.page-btn:hover, .page-btn.active { background: var(--sky); border-color: var(--sky); color: #fff; }
+
+/* ---- Notice / Alert ---- */
+.notice {
+  padding: 14px 20px;
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+  display: flex; gap: 10px; align-items: flex-start;
+}
+.notice-info { background: rgba(45,125,210,0.08); border-left: 4px solid var(--sky); color: var(--navy); }
+.notice-success { background: rgba(56,161,105,0.08); border-left: 4px solid #38a169; color: #276749; }
+
+/* ---- Misc ---- */
+.text-center { text-align: center; }
+.text-white { color: #fff; }
+.mb-4 { margin-bottom: 16px; }
+.mb-6 { margin-bottom: 24px; }
+.mb-8 { margin-bottom: 32px; }
+.mb-12 { margin-bottom: 48px; }
+.mt-8 { margin-top: 32px; }
+.badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
+.badge-blue { background: rgba(45,125,210,0.1); color: var(--sky); }
+.badge-gold { background: rgba(240,165,0,0.12); color: #b07800; }
+.divider { border: none; border-top: 1px solid var(--gray-100); margin: 40px 0; }
+
+/* ---- Responsive ---- */
+@media (max-width: 1024px) {
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .post-layout { grid-template-columns: 1fr; }
+  .sidebar { position: static; }
+}
+@media (max-width: 768px) {
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .hero-stats { gap: 28px; flex-wrap: wrap; }
+  .nav-links, .nav-cta { display: none; }
+  .hamburger { display: block; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .hero h1 { font-size: 2rem; }
+  .hero-btns { flex-direction: column; }
+  .btn { text-align: center; }
+  .team-grid { grid-template-columns: 1fr; }
+}
+
+</style>
+  
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" aria-label="Navigasi utama">
+  <div class="container nav-inner">
+    <a href="./index.html" class="nav-logo" aria-label="GPWindow Home">GP<span>Window</span></a>
+    <ul class="nav-links" role="list">
+      <li><a href="./index.html" class="active" aria-current="page">Beranda</a></li>
+      <li><a href="about/index.html">Tentang Kami</a></li>
+      <li><a href="blog/index.html">Blog</a></li>
+      <li><a href="contact/index.html">Kontak</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contact/index.html" class="btn btn-gold">Konsultasi Gratis</a>
+    </div>
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-eyebrow">✦ Trusted Since 2010</div>
+      <h1 id="hero-heading">Solusi Kaca &amp; <span class="accent">Jendela Premium</span> untuk Bangunan Anda</h1>
+      <p class="hero-sub">GPWindow menghadirkan kaca, jendela, dan pintu aluminium berkualitas tinggi dengan instalasi profesional. Dari hunian modern hingga gedung komersial, kami siap mewujudkan impian Anda.</p>
+      <div class="hero-btns">
+        <a href="contact/index.html" class="btn btn-gold">Konsultasi Gratis</a>
+        <a href="blog/index.html" class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,0.4);">Pelajari Lebih Lanjut</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-num">2.500+</div>
+          <div class="hero-stat-label">Proyek Selesai</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">14+</div>
+          <div class="hero-stat-label">Tahun Pengalaman</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">98%</div>
+          <div class="hero-stat-label">Kepuasan Klien</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" aria-labelledby="services-heading">
+  <div class="container">
+    <div class="text-center mb-12">
+      <div class="label">Layanan Kami</div>
+      <h2 id="services-heading">Produk &amp; Jasa Unggulan</h2>
+      <p style="max-width:520px;margin:12px auto 0;">Kami menyediakan rangkaian produk kaca dan jendela premium dengan dukungan instalasi profesional bergaransi.</p>
+    </div>
+    <div class="grid-3 reveal">
+      <div class="card" style="padding:28px;">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 3h8v8H3V3zm0 10h8v8H3v-8zm10-10h8v8h-8V3zm0 10h8v8h-8v-8z"/></svg>
+        </div>
+        <h3>Jendela Aluminium</h3>
+        <p>Rangka aluminium presisi tinggi dengan beragam pilihan finishing. Tahan karat, ringan, dan estetis untuk setiap konsep bangunan.</p>
+        <a href="blog/jendela-aluminium-vs-upvc/index.html" class="btn btn-outline" style="margin-top:12px;font-size:0.85rem;">Selengkapnya</a>
+      </div>
+      <div class="card" style="padding:28px;">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+        </div>
+        <h3>Kaca Tempered</h3>
+        <p>Kaca tempered 5x lebih kuat dari kaca biasa. Aman untuk aplikasi pintu, shower, dan partisi dengan ketebalan 5–19 mm.</p>
+        <a href="blog/keunggulan-kaca-tempered/index.html" class="btn btn-outline" style="margin-top:12px;font-size:0.85rem;">Selengkapnya</a>
+      </div>
+      <div class="card" style="padding:28px;">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
+        </div>
+        <h3>Kaca Film &amp; Solar</h3>
+        <p>Kurangi panas hingga 70% dan hemat energi AC. Tersedia berbagai tingkat kegelapan dan warna untuk privasi optimal.</p>
+        <a href="blog/kaca-film-hemat-energi/index.html" class="btn btn-outline" style="margin-top:12px;font-size:0.85rem;">Selengkapnya</a>
+      </div>
+      <div class="card" style="padding:28px;">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"/></svg>
+        </div>
+        <h3>Pintu Kaca Frameless</h3>
+        <p>Pintu kaca tanpa bingkai (frameless) memberikan tampilan modern dan mewah. Cocok untuk kantor, showroom, dan hunian premium.</p>
+        <a href="blog/desain-pintu-kaca-modern/index.html" class="btn btn-outline" style="margin-top:12px;font-size:0.85rem;">Selengkapnya</a>
+      </div>
+      <div class="card" style="padding:28px;">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 3L2 12h3v9h6v-6h2v6h6v-9h3L12 3z"/></svg>
+        </div>
+        <h3>Jendela UPVC</h3>
+        <p>Material UPVC berinsulasi suara dan panas terbaik. Ideal untuk rumah di kawasan bising atau daerah tropis yang membutuhkan efisiensi energi.</p>
+        <a href="blog/jendela-upvc-terbaik/index.html" class="btn btn-outline" style="margin-top:12px;font-size:0.85rem;">Selengkapnya</a>
+      </div>
+      <div class="card" style="padding:28px;">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
+        </div>
+        <h3>Konsultasi &amp; Instalasi</h3>
+        <p>Tim teknisi bersertifikat kami siap mengukur, merancang, dan memasang dengan presisi. Garansi pemasangan 2 tahun untuk ketenangan pikiran Anda.</p>
+        <a href="contact/index.html" class="btn btn-outline" style="margin-top:12px;font-size:0.85rem;">Konsultasi Sekarang</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="section" style="background:var(--gray-100);" aria-labelledby="why-heading">
+  <div class="container">
+    <div class="grid-2" style="align-items:center;gap:60px;">
+      <div>
+        <div class="label">Mengapa GPWindow</div>
+        <h2 id="why-heading">Standar Kualitas yang Tidak Pernah Kompromi</h2>
+        <p>Sejak 2010, kami telah melayani lebih dari 2.500 proyek di seluruh Indonesia — dari perumahan, apartemen, gedung perkantoran, hingga pusat perbelanjaan. Kepercayaan klien adalah motivasi terbesar kami.</p>
+        <ul style="list-style:none;margin-top:24px;">
+          <li style="display:flex;gap:12px;margin-bottom:16px;align-items:flex-start;">
+            <span style="color:var(--gold);font-size:1.2rem;margin-top:2px;">✓</span>
+            <div><strong>Material Import Berstandar SNI</strong><br><span style="font-size:0.88rem;color:var(--gray-500);">Seluruh produk kami memenuhi standar nasional Indonesia dan lulus uji kualitas internasional.</span></div>
+          </li>
+          <li style="display:flex;gap:12px;margin-bottom:16px;align-items:flex-start;">
+            <span style="color:var(--gold);font-size:1.2rem;margin-top:2px;">✓</span>
+            <div><strong>Teknisi Bersertifikat &amp; Berpengalaman</strong><br><span style="font-size:0.88rem;color:var(--gray-500);">Tim kami terdiri dari teknisi terlatih dengan pengalaman minimal 5 tahun di bidangnya.</span></div>
+          </li>
+          <li style="display:flex;gap:12px;margin-bottom:16px;align-items:flex-start;">
+            <span style="color:var(--gold);font-size:1.2rem;margin-top:2px;">✓</span>
+            <div><strong>Garansi Produk &amp; Instalasi</strong><br><span style="font-size:0.88rem;color:var(--gray-500);">Garansi produk hingga 10 tahun dan garansi pemasangan 2 tahun tanpa syarat tersembunyi.</span></div>
+          </li>
+          <li style="display:flex;gap:12px;align-items:flex-start;">
+            <span style="color:var(--gold);font-size:1.2rem;margin-top:2px;">✓</span>
+            <div><strong>Harga Transparan &amp; Kompetitif</strong><br><span style="font-size:0.88rem;color:var(--gray-500);">Tidak ada biaya tersembunyi. Penawaran harga terperinci diberikan sebelum pekerjaan dimulai.</span></div>
+          </li>
+        </ul>
+        <a href="about/index.html" class="btn btn-primary" style="margin-top:28px;">Kenali Kami Lebih Lanjut</a>
+      </div>
+      <div style="background:var(--navy);border-radius:16px;padding:40px;color:#fff;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:-20px;right:-20px;width:120px;height:120px;background:rgba(240,165,0,0.1);border-radius:50%;"></div>
+        <div style="position:absolute;bottom:-30px;left:-30px;width:160px;height:160px;background:rgba(45,125,210,0.08);border-radius:50%;"></div>
+        <div style="position:relative;z-index:2;">
+          <h3 style="color:#fff;margin-bottom:28px;">Pencapaian Kami</h3>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;">
+            <div style="text-align:center;">
+              <div style="font-family:'Syne',sans-serif;font-size:2.2rem;font-weight:800;color:var(--gold);">2.500+</div>
+              <div style="font-size:0.82rem;color:rgba(255,255,255,0.65);">Proyek Sukses</div>
+            </div>
+            <div style="text-align:center;">
+              <div style="font-family:'Syne',sans-serif;font-size:2.2rem;font-weight:800;color:var(--gold);">14+</div>
+              <div style="font-size:0.82rem;color:rgba(255,255,255,0.65);">Tahun Pengalaman</div>
+            </div>
+            <div style="text-align:center;">
+              <div style="font-family:'Syne',sans-serif;font-size:2.2rem;font-weight:800;color:var(--gold);">50+</div>
+              <div style="font-size:0.82rem;color:rgba(255,255,255,0.65);">Teknisi Profesional</div>
+            </div>
+            <div style="text-align:center;">
+              <div style="font-family:'Syne',sans-serif;font-size:2.2rem;font-weight:800;color:var(--gold);">248</div>
+              <div style="font-size:0.82rem;color:rgba(255,255,255,0.65);">Ulasan Bintang 5</div>
+            </div>
+          </div>
+          <div style="margin-top:28px;padding:18px;background:rgba(255,255,255,0.06);border-radius:8px;border-left:3px solid var(--gold);">
+            <p style="font-size:0.88rem;color:rgba(255,255,255,0.8);margin:0;font-style:italic;">"GPWindow telah menjadi mitra terpercaya kami untuk setiap proyek gedung komersial selama 6 tahun terakhir."</p>
+            <p style="font-size:0.78rem;color:var(--gold);margin:8px 0 0;font-weight:600;">— Arsitek Senior, Jakarta</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LATEST BLOG -->
+<section class="section" aria-labelledby="blog-heading">
+  <div class="container">
+    <div class="text-center mb-12">
+      <div class="label">Artikel Terbaru</div>
+      <h2 id="blog-heading">Tips &amp; Inspirasi Dari Blog Kami</h2>
+    </div>
+    <div class="grid-3 reveal">
+      <article class="card blog-card">
+        <div class="card-img" style="background:linear-gradient(135deg,#0B1F3A,#2D7DD2);display:flex;align-items:center;justify-content:center;font-size:3rem;">🪟</div>
+        <div class="card-body">
+          <span class="card-tag">Material</span>
+          <h3 class="card-title"><a href="blog/jendela-aluminium-vs-upvc/index.html">Jendela Aluminium vs UPVC: Mana yang Lebih Baik?</a></h3>
+          <div class="card-meta">📅 12 Maret 2025 &nbsp;·&nbsp; ⏱ 5 menit baca</div>
+          <p class="card-excerpt">Perbandingan mendalam antara dua material jendela paling populer — kelebihan, kekurangan, dan mana yang tepat untuk rumah Anda.</p>
+        </div>
+        <div class="card-footer"><a href="blog/jendela-aluminium-vs-upvc/index.html" class="btn btn-outline" style="font-size:0.82rem;padding:8px 18px;">Baca Selengkapnya</a></div>
+      </article>
+      <article class="card blog-card">
+        <div class="card-img" style="background:linear-gradient(135deg,#1E3A5F,#F0A500);display:flex;align-items:center;justify-content:center;font-size:3rem;">🏠</div>
+        <div class="card-body">
+          <span class="card-tag">Desain</span>
+          <h3 class="card-title"><a href="blog/desain-pintu-kaca-modern/index.html">7 Desain Pintu Kaca Modern yang Mengubah Tampilan Rumah</a></h3>
+          <div class="card-meta">📅 5 Januari 2025 &nbsp;·&nbsp; ⏱ 6 menit baca</div>
+          <p class="card-excerpt">Inspirasi desain pintu kaca terkini yang bisa meningkatkan estetika dan nilai properti Anda secara signifikan.</p>
+        </div>
+        <div class="card-footer"><a href="blog/desain-pintu-kaca-modern/index.html" class="btn btn-outline" style="font-size:0.82rem;padding:8px 18px;">Baca Selengkapnya</a></div>
+      </article>
+      <article class="card blog-card">
+        <div class="card-img" style="background:linear-gradient(135deg,#163c6e,#38a169);display:flex;align-items:center;justify-content:center;font-size:3rem;">☀️</div>
+        <div class="card-body">
+          <span class="card-tag">Energi</span>
+          <h3 class="card-title"><a href="blog/kaca-film-hemat-energi/index.html">Kaca Film Solar: Cara Cerdas Hemat Tagihan Listrik</a></h3>
+          <div class="card-meta">📅 20 Oktober 2024 &nbsp;·&nbsp; ⏱ 7 menit baca</div>
+          <p class="card-excerpt">Bagaimana kaca film solar control bekerja mereduksi panas matahari dan menurunkan konsumsi AC secara drastis.</p>
+        </div>
+        <div class="card-footer"><a href="blog/kaca-film-hemat-energi/index.html" class="btn btn-outline" style="font-size:0.82rem;padding:8px 18px;">Baca Selengkapnya</a></div>
+      </article>
+    </div>
+    <div class="text-center mt-8">
+      <a href="blog/index.html" class="btn btn-primary">Lihat Semua Artikel</a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section" style="background:var(--gray-100);" aria-labelledby="testi-heading">
+  <div class="container">
+    <div class="text-center mb-12">
+      <div class="label">Ulasan Pelanggan</div>
+      <h2 id="testi-heading">Apa Kata Mereka tentang GPWindow</h2>
+    </div>
+    <div class="grid-3 reveal">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">Pemasangan jendela aluminium di rumah kami berjalan sangat rapi dan cepat. Tim GPWindow benar-benar profesional, hasilnya melebihi ekspektasi kami.</p>
+        <div class="testimonial-author">
+          <div class="testi-avatar" style="background:#2D7DD2;">BH</div>
+          <div>
+            <div class="testi-name">Budi Hartanto</div>
+            <div class="testi-company">Pemilik Rumah – Serpong, Tangerang</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">Kami mempercayakan seluruh kaca gedung kantor kami kepada GPWindow. Kualitas produk dan kecepatan pengerjaannya luar biasa. Harga pun sangat kompetitif.</p>
+        <div class="testimonial-author">
+          <div class="testi-avatar" style="background:#F0A500;">SR</div>
+          <div>
+            <div class="testi-name">Siti Rahayu</div>
+            <div class="testi-company">Direktur Operasional – PT Karya Mandiri</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">Kaca film yang dipasang GPWindow sangat efektif mengurangi panas. Ruangan jadi lebih sejuk dan tagihan listrik turun signifikan. Sangat rekomendasikan!</p>
+        <div class="testimonial-author">
+          <div class="testi-avatar" style="background:#38a169;">AN</div>
+          <div>
+            <div class="testi-name">Ahmad Nugroho</div>
+            <div class="testi-company">Arsitek – Studio Rancang Jakarta</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner" aria-labelledby="cta-heading">
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="label" style="color:var(--gold);">Mulai Sekarang</div>
+    <h2 id="cta-heading">Siap Transformasi Bangunan Anda?</h2>
+    <p>Konsultasikan kebutuhan kaca dan jendela Anda dengan tim ahli kami. Gratis, tanpa kewajiban apapun.</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a href="contact/index.html" class="btn btn-gold">Konsultasi Gratis Sekarang</a>
+      <a href="tel:+622155501234" class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,0.4);">📞 021-5550-1234</a>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="section-sm" style="background:#fff;border-top:1px solid var(--gray-100);">
+  <div class="container" style="max-width:600px;text-align:center;">
+    <div class="label">Newsletter</div>
+    <h3 style="margin-bottom:8px;">Dapatkan Tips &amp; Promo Terbaru</h3>
+    <p style="margin-bottom:24px;font-size:0.9rem;">Berlangganan newsletter kami dan dapatkan tips perawatan kaca, inspirasi desain, serta penawaran eksklusif langsung ke inbox Anda.</p>
+    <form id="newsletterForm" style="display:flex;gap:12px;" aria-label="Form berlangganan newsletter">
+      <input type="email" placeholder="Masukkan email Anda..." required aria-label="Alamat email" style="flex:1;padding:12px 16px;border:1.5px solid var(--gray-300);border-radius:6px;font-family:'Inter',sans-serif;font-size:0.92rem;outline:none;">
+      <button type="submit" class="btn btn-primary">Berlangganan</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" aria-label="Footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>GP<span>Window</span></h3>
+        <p>Distributor dan installer kaca, jendela, dan pintu aluminium premium terpercaya di Indonesia sejak 2010. Solusi terbaik untuk setiap kebutuhan bangunan Anda.</p>
+        <div class="social-links" style="margin-top:20px;">
+          <a href="#" class="social-link" aria-label="Facebook">f</a>
+          <a href="#" class="social-link" aria-label="Instagram">in</a>
+          <a href="#" class="social-link" aria-label="YouTube">▶</a>
+          <a href="#" class="social-link" aria-label="WhatsApp">wa</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Produk</h4>
+        <ul>
+          <li><a href="blog/jendela-aluminium-vs-upvc/index.html">Jendela Aluminium</a></li>
+          <li><a href="blog/keunggulan-kaca-tempered/index.html">Kaca Tempered</a></li>
+          <li><a href="blog/kaca-film-hemat-energi/index.html">Kaca Film Solar</a></li>
+          <li><a href="blog/jendela-upvc-terbaik/index.html">Jendela UPVC</a></li>
+          <li><a href="blog/desain-pintu-kaca-modern/index.html">Pintu Kaca Frameless</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Perusahaan</h4>
+        <ul>
+          <li><a href="about/index.html">Tentang Kami</a></li>
+          <li><a href="blog/index.html">Blog &amp; Artikel</a></li>
+          <li><a href="contact/index.html">Hubungi Kami</a></li>
+          <li><a href="#">Karier</a></li>
+          <li><a href="#">Kebijakan Privasi</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontak</h4>
+        <ul>
+          <li><a href="tel:+622155501234">📞 021-5550-1234</a></li>
+          <li><a href="mailto:info@gpwindow.com">✉ info@gpwindow.com</a></li>
+          <li><span style="color:rgba(255,255,255,0.5);">📍 Jl. Industri Raya No.88<br>Jakarta Barat 11740</span></li>
+          <li><span style="color:rgba(255,255,255,0.5);">🕐 Senin – Sabtu, 08.00 – 17.00</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 GPWindow. Semua hak dilindungi undang-undang.</p>
+      <p>Dibuat dengan ❤ di Jakarta, Indonesia</p>
+    </div>
+  </div>
+</footer>
+
+<button id="scrollTop" aria-label="Kembali ke atas">↑</button>
+<script>
+// GPWindow — Main JS
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  // ---- Mobile nav toggle ----
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+  const navCta = document.querySelector('.nav-cta');
+  if (hamburger) {
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      if (navLinks) navLinks.classList.toggle('open');
+      if (navCta) navCta.classList.toggle('open');
+    });
+  }
+
+  // ---- Active nav link ----
+  const currentPath = window.location.pathname;
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    if (link.getAttribute('href') === currentPath || 
+        (currentPath.includes('/blog') && link.getAttribute('href').includes('/blog'))) {
+      link.classList.add('active');
+    }
+  });
+
+  // ---- Comment form submission ----
+  const commentForm = document.getElementById('commentForm');
+  if (commentForm) {
+    commentForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('commentName')?.value;
+      const comment = document.getElementById('commentText')?.value;
+      if (!name || !comment) return;
+
+      const list = document.getElementById('commentList');
+      const colors = ['#2D7DD2','#F0A500','#38a169','#e53e3e','#805AD5'];
+      const color = colors[Math.floor(Math.random() * colors.length)];
+      const initials = name.split(' ').map(w => w[0]).join('').toUpperCase().slice(0,2);
+      const now = new Date().toLocaleDateString('id-ID', {day:'numeric',month:'long',year:'numeric'});
+
+      const item = document.createElement('div');
+      item.className = 'comment-item';
+      item.style.animation = 'fadeIn 0.4s ease';
+      item.innerHTML = `
+        <div class="comment-header">
+          <div class="comment-avatar" style="background:${color}">${initials}</div>
+          <div>
+            <div class="comment-name">${escapeHtml(name)} <span class="comment-verified">✓ Baru</span></div>
+            <div class="comment-date">${now}</div>
+          </div>
+        </div>
+        <div class="comment-body">${escapeHtml(comment)}</div>
+      `;
+      if (list) {
+        list.prepend(item);
+        const countEl = document.getElementById('commentCount');
+        if (countEl) countEl.textContent = parseInt(countEl.textContent || 0) + 1;
+      }
+      commentForm.reset();
+      showToast('Komentar Anda berhasil dikirim!');
+    });
+  }
+
+  // ---- Blog filters ----
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      document.querySelectorAll('.blog-card').forEach(card => {
+        if (filter === 'all' || card.dataset.category === filter) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // ---- Newsletter form ----
+  const newsletterForm = document.getElementById('newsletterForm');
+  if (newsletterForm) {
+    newsletterForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      showToast('Terima kasih! Anda telah berlangganan newsletter kami.');
+      newsletterForm.reset();
+    });
+  }
+
+  // ---- Contact form ----
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      showToast('Pesan Anda telah terkirim. Kami akan menghubungi Anda segera!');
+      contactForm.reset();
+    });
+  }
+
+  // ---- Scroll reveal ----
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // ---- Scroll to top button ----
+  const scrollBtn = document.getElementById('scrollTop');
+  if (scrollBtn) {
+    window.addEventListener('scroll', () => {
+      scrollBtn.style.opacity = window.scrollY > 400 ? '1' : '0';
+      scrollBtn.style.pointerEvents = window.scrollY > 400 ? 'auto' : 'none';
+    });
+    scrollBtn.addEventListener('click', () => window.scrollTo({top: 0, behavior: 'smooth'}));
+  }
+
+});
+
+function escapeHtml(text) {
+  const div = document.createElement('div');
+  div.appendChild(document.createTextNode(text));
+  return div.innerHTML;
+}
+
+function showToast(msg) {
+  const toast = document.createElement('div');
+  toast.style.cssText = `
+    position:fixed;bottom:28px;right:28px;
+    background:#0B1F3A;color:#fff;
+    padding:14px 22px;border-radius:8px;
+    font-size:0.9rem;font-family:'Inter',sans-serif;
+    box-shadow:0 8px 24px rgba(0,0,0,0.2);
+    z-index:9999;animation:fadeIn 0.3s ease;
+    border-left:4px solid #F0A500;
+  `;
+  toast.textContent = msg;
+  document.body.appendChild(toast);
+  setTimeout(() => { toast.style.opacity = '0'; toast.style.transition = '0.3s'; setTimeout(() => toast.remove(), 300); }, 3500);
+}
+
+// CSS animations injected
+const styleTag = document.createElement('style');
+styleTag.textContent = `
+@keyframes fadeIn { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+.reveal { opacity:0; transform:translateY(24px); transition: opacity 0.55s ease, transform 0.55s ease; }
+.reveal.revealed { opacity:1; transform:translateY(0); }
+.hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+@media (max-width: 768px) {
+  .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 68px; left: 0; right: 0; background: rgba(11,31,58,0.98); padding: 16px; gap: 4px; }
+  .nav-cta.open { display: block; position: absolute; top: 68px; left: 0; right: 0; padding: 0 16px 16px; background: rgba(11,31,58,0.98); }
+}
+#scrollTop { position:fixed;bottom:80px;right:24px;width:44px;height:44px;background:var(--sky);color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.2rem;opacity:0;transition:opacity 0.3s;z-index:999;box-shadow:0 4px 16px rgba(45,125,210,0.4); }
+#scrollTop:hover { background:var(--navy); }
+`;
+document.head.appendChild(styleTag);
+
+</script>
+</body>
+</html>

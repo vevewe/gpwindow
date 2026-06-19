@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog GPWindow – Tips Kaca, Jendela & Desain Bangunan</title>
+  <meta name="description" content="Temukan artikel informatif seputar kaca, jendela, pintu aluminium, tips perawatan, dan inspirasi desain bangunan modern di blog GPWindow.">
+  <meta name="keywords" content="blog kaca, tips jendela, desain bangunan modern, perawatan kaca, instalasi jendela, gpwindow blog">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://gpwindow.com/blog">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Blog GPWindow – Tips Kaca & Jendela">
+  <meta property="og:description" content="Artikel informatif seputar kaca, jendela, dan desain bangunan modern.">
+  <meta property="og:url" content="https://gpwindow.com/blog">
+  <meta property="og:image" content="https://gpwindow.com/assets/og-image.jpg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Blog GPWindow",
+    "url": "https://gpwindow.com/blog",
+    "description": "Tips, inspirasi, dan panduan seputar kaca, jendela, dan pintu aluminium.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "GPWindow",
+      "url": "https://gpwindow.com"
+    }
+  }
+  </script>
+  <style>
+/* =============================================
+   GPWindow — Main Stylesheet
+   ============================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --navy: #0B1F3A;
+  --steel: #1E3A5F;
+  --sky: #2D7DD2;
+  --ice: #A8D5F0;
+  --gold: #F0A500;
+  --white: #F7FAFC;
+  --gray-100: #EDF2F7;
+  --gray-300: #CBD5E0;
+  --gray-500: #718096;
+  --gray-700: #2D3748;
+  --text: #1A202C;
+  --radius: 6px;
+  --shadow: 0 4px 24px rgba(11,31,58,0.10);
+  --transition: 0.22s cubic-bezier(.4,0,.2,1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--white);
+  color: var(--text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---- Typography ---- */
+h1,h2,h3,h4,h5,h6 { font-family: 'Syne', sans-serif; line-height: 1.2; color: var(--navy); }
+h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); font-weight: 800; }
+h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 700; }
+h3 { font-size: 1.3rem; font-weight: 600; }
+p { margin-bottom: 1rem; color: var(--gray-700); }
+a { color: var(--sky); text-decoration: none; transition: color var(--transition); }
+a:hover { color: var(--gold); }
+img { max-width: 100%; display: block; }
+
+.container { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+.section { padding: 80px 0; }
+.section-sm { padding: 48px 0; }
+
+/* ---- Buttons ---- */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: var(--radius);
+  font-family: 'Syne', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all var(--transition);
+  letter-spacing: 0.02em;
+}
+.btn-primary { background: var(--sky); color: #fff; }
+.btn-primary:hover { background: var(--navy); color: #fff; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(45,125,210,0.3); }
+.btn-outline { background: transparent; color: var(--sky); border-color: var(--sky); }
+.btn-outline:hover { background: var(--sky); color: #fff; }
+.btn-gold { background: var(--gold); color: var(--navy); }
+.btn-gold:hover { background: #d4900a; color: var(--navy); transform: translateY(-2px); }
+
+/* ---- Navbar ---- */
+.navbar {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(11,31,58,0.97);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(168,213,240,0.12);
+  padding: 0;
+}
+.nav-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 68px;
+}
+.nav-logo {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+.nav-logo span { color: var(--gold); }
+.nav-links { display: flex; gap: 8px; list-style: none; }
+.nav-links a {
+  color: rgba(255,255,255,0.82);
+  font-size: 0.92rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  transition: all var(--transition);
+}
+.nav-links a:hover, .nav-links a.active { background: var(--sky); color: #fff; }
+.nav-cta .btn { padding: 9px 22px; font-size: 0.88rem; }
+.hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+.hamburger span { display: block; width: 24px; height: 2px; background: #fff; margin: 5px 0; transition: all var(--transition); }
+
+/* ---- Hero ---- */
+.hero {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--steel) 60%, #163c6e 100%);
+  min-height: 92vh;
+  display: flex; align-items: center;
+  position: relative; overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232D7DD2' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.hero-content { position: relative; z-index: 2; max-width: 700px; }
+.hero-eyebrow {
+  display: inline-block;
+  background: rgba(240,165,0,0.15);
+  color: var(--gold);
+  border: 1px solid rgba(240,165,0,0.3);
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.hero h1 { color: #fff; margin-bottom: 20px; }
+.hero h1 .accent { color: var(--gold); }
+.hero-sub { font-size: 1.1rem; color: rgba(255,255,255,0.75); margin-bottom: 36px; max-width: 520px; }
+.hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+.hero-visual {
+  position: absolute; right: -60px; top: 50%; transform: translateY(-50%);
+  width: 500px; opacity: 0.07; pointer-events: none;
+}
+.hero-stats {
+  display: flex; gap: 48px; margin-top: 64px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+.hero-stat-num { font-family: 'Syne', sans-serif; font-size: 2rem; font-weight: 800; color: var(--gold); }
+.hero-stat-label { font-size: 0.85rem; color: rgba(255,255,255,0.6); }
+
+/* ---- Section Labels ---- */
+.label {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--sky);
+  margin-bottom: 10px;
+}
+
+/* ---- Cards ---- */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid var(--gray-100);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(11,31,58,0.14); }
+.card-img { width: 100%; height: 200px; object-fit: cover; background: var(--gray-100); }
+.card-body { padding: 24px; }
+.card-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 10px;
+  border-radius: 30px;
+  background: rgba(45,125,210,0.1);
+  color: var(--sky);
+  margin-bottom: 12px;
+}
+.card-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 10px; color: var(--navy); }
+.card-title a { color: inherit; }
+.card-title a:hover { color: var(--sky); }
+.card-meta { font-size: 0.8rem; color: var(--gray-500); display: flex; gap: 12px; align-items: center; margin-bottom: 12px; }
+.card-meta svg { width: 14px; height: 14px; }
+.card-excerpt { font-size: 0.9rem; color: var(--gray-500); line-height: 1.6; }
+.card-footer { padding: 16px 24px; border-top: 1px solid var(--gray-100); }
+
+/* ---- Grid ---- */
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+
+/* ---- Services / Features ---- */
+.feature-icon {
+  width: 52px; height: 52px;
+  background: linear-gradient(135deg, var(--sky) 0%, var(--navy) 100%);
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 18px;
+}
+.feature-icon svg { width: 26px; height: 26px; fill: #fff; }
+
+/* ---- Blog Post ---- */
+.post-hero {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--steel) 100%);
+  padding: 100px 0 60px;
+  color: #fff;
+}
+.post-hero h1 { color: #fff; font-size: clamp(1.8rem, 4vw, 3rem); }
+.post-meta { display: flex; gap: 20px; align-items: center; color: rgba(255,255,255,0.65); font-size: 0.88rem; margin-top: 16px; flex-wrap: wrap; }
+.post-tag-inline {
+  background: var(--gold); color: var(--navy);
+  padding: 3px 12px; border-radius: 30px;
+  font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;
+}
+.post-content { max-width: 760px; margin: 0 auto; padding: 60px 0; }
+.post-content h2 { margin: 2.4rem 0 1rem; }
+.post-content h3 { margin: 2rem 0 0.8rem; }
+.post-content ul, .post-content ol { margin: 1rem 0 1rem 1.6rem; }
+.post-content li { margin-bottom: 0.5rem; color: var(--gray-700); }
+.post-content blockquote {
+  border-left: 4px solid var(--gold);
+  padding: 12px 24px;
+  margin: 2rem 0;
+  background: rgba(240,165,0,0.06);
+  border-radius: 0 6px 6px 0;
+}
+.post-content blockquote p { color: var(--navy); font-style: italic; font-size: 1.05rem; margin: 0; }
+.post-img { width: 100%; height: 400px; object-fit: cover; border-radius: 10px; margin: 2rem 0; background: var(--gray-100); display: flex; align-items: center; justify-content: center; }
+.post-img-placeholder { font-size: 3rem; }
+
+/* ---- Comments ---- */
+.comments-section { background: var(--gray-100); padding: 60px 0; }
+.comment-list { display: flex; flex-direction: column; gap: 20px; margin-bottom: 40px; }
+.comment-item {
+  background: #fff;
+  border-radius: 10px;
+  padding: 24px;
+  border: 1px solid var(--gray-300);
+}
+.comment-header { display: flex; gap: 14px; align-items: flex-start; margin-bottom: 12px; }
+.comment-avatar {
+  width: 44px; height: 44px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1rem; color: #fff;
+  flex-shrink: 0;
+}
+.comment-name { font-weight: 600; font-size: 0.95rem; color: var(--navy); }
+.comment-date { font-size: 0.78rem; color: var(--gray-500); }
+.comment-body { font-size: 0.92rem; color: var(--gray-700); line-height: 1.65; }
+.comment-verified {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 0.72rem; font-weight: 600; color: #38a169;
+  background: rgba(56,161,105,0.08); padding: 2px 8px; border-radius: 20px;
+}
+
+.comment-form {
+  background: #fff;
+  border-radius: 10px;
+  padding: 32px;
+  border: 1px solid var(--gray-300);
+}
+.comment-form h3 { margin-bottom: 20px; font-size: 1.2rem; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.form-group label { font-size: 0.85rem; font-weight: 600; color: var(--navy); }
+.form-group input, .form-group textarea {
+  border: 1.5px solid var(--gray-300);
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.92rem;
+  transition: border-color var(--transition);
+  resize: none;
+  outline: none;
+  color: var(--text);
+}
+.form-group input:focus, .form-group textarea:focus { border-color: var(--sky); box-shadow: 0 0 0 3px rgba(45,125,210,0.12); }
+.form-group textarea { height: 110px; }
+
+/* ---- Breadcrumb ---- */
+.breadcrumb { padding: 16px 0; }
+.breadcrumb ol { display: flex; gap: 8px; list-style: none; font-size: 0.85rem; align-items: center; flex-wrap: wrap; }
+.breadcrumb li { display: flex; align-items: center; gap: 8px; color: var(--gray-500); }
+.breadcrumb li a { color: var(--sky); }
+.breadcrumb li:not(:last-child)::after { content: '/'; color: var(--gray-300); }
+
+/* ---- Sidebar ---- */
+.post-layout { display: grid; grid-template-columns: 1fr 300px; gap: 48px; align-items: start; }
+.sidebar { position: sticky; top: 88px; }
+.sidebar-widget {
+  background: #fff;
+  border: 1px solid var(--gray-100);
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow);
+}
+.sidebar-widget h4 { font-size: 1rem; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--gold); }
+.recent-post-item { display: flex; gap: 12px; margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px solid var(--gray-100); }
+.recent-post-item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+.recent-post-thumb { width: 60px; height: 52px; border-radius: 6px; background: var(--gray-100); flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; }
+.recent-post-title { font-size: 0.85rem; font-weight: 600; line-height: 1.4; color: var(--navy); }
+.recent-post-date { font-size: 0.75rem; color: var(--gray-500); margin-top: 4px; }
+.tag-cloud { display: flex; flex-wrap: wrap; gap: 8px; }
+.tag-pill {
+  padding: 5px 12px;
+  border-radius: 20px;
+  background: var(--gray-100);
+  color: var(--gray-700);
+  font-size: 0.78rem;
+  font-weight: 500;
+  transition: all var(--transition);
+  cursor: pointer;
+}
+.tag-pill:hover { background: var(--sky); color: #fff; }
+
+/* ---- Footer ---- */
+.footer { background: var(--navy); color: rgba(255,255,255,0.75); padding: 64px 0 0; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+.footer-brand h3 { color: #fff; font-size: 1.4rem; margin-bottom: 12px; }
+.footer-brand h3 span { color: var(--gold); }
+.footer-brand p { font-size: 0.88rem; line-height: 1.65; }
+.footer-col h4 { color: #fff; font-size: 0.95rem; margin-bottom: 16px; }
+.footer-col ul { list-style: none; }
+.footer-col li { margin-bottom: 10px; }
+.footer-col a { color: rgba(255,255,255,0.65); font-size: 0.88rem; transition: color var(--transition); }
+.footer-col a:hover { color: var(--gold); }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 20px 0;
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 0.82rem;
+}
+.social-links { display: flex; gap: 12px; }
+.social-link {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  display: flex; align-items: center; justify-content: center;
+  transition: all var(--transition);
+  color: rgba(255,255,255,0.65);
+}
+.social-link:hover { background: var(--sky); color: #fff; }
+
+/* ---- About ---- */
+.about-hero { background: linear-gradient(135deg, var(--navy) 0%, var(--steel) 100%); padding: 100px 0; color: #fff; }
+.about-hero h1 { color: #fff; }
+.team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; }
+.team-card { text-align: center; }
+.team-avatar {
+  width: 100px; height: 100px;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2.4rem;
+  background: linear-gradient(135deg, var(--sky), var(--navy));
+}
+.team-name { font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+.team-role { font-size: 0.85rem; color: var(--gray-500); }
+.timeline { position: relative; padding-left: 32px; }
+.timeline::before { content: ''; position: absolute; left: 8px; top: 0; bottom: 0; width: 2px; background: var(--gray-300); }
+.timeline-item { position: relative; margin-bottom: 32px; }
+.timeline-item::before {
+  content: ''; position: absolute;
+  left: -28px; top: 6px;
+  width: 12px; height: 12px;
+  border-radius: 50%; background: var(--sky);
+  border: 2px solid #fff; box-shadow: 0 0 0 2px var(--sky);
+}
+.timeline-year { font-family: 'Syne', sans-serif; font-size: 0.8rem; font-weight: 700; color: var(--sky); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px; }
+.timeline-title { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+.timeline-desc { font-size: 0.88rem; color: var(--gray-500); }
+
+/* ---- Contact ---- */
+.contact-hero { background: linear-gradient(135deg, var(--navy) 0%, var(--steel) 100%); padding: 100px 0; color: #fff; }
+.contact-hero h1 { color: #fff; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+.contact-form {
+  background: #fff;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: var(--shadow);
+}
+.contact-info-item { display: flex; gap: 16px; margin-bottom: 32px; }
+.contact-icon {
+  width: 48px; height: 48px; border-radius: 10px;
+  background: rgba(45,125,210,0.1);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.contact-icon svg { width: 22px; height: 22px; fill: var(--sky); }
+
+/* ---- Blog Index ---- */
+.blog-hero { background: linear-gradient(135deg, var(--navy) 0%, var(--steel) 100%); padding: 80px 0; color: #fff; }
+.blog-hero h1 { color: #fff; }
+.blog-filters { display: flex; gap: 10px; flex-wrap: wrap; margin: 24px 0; }
+.filter-btn {
+  padding: 7px 18px;
+  border-radius: 30px;
+  border: 1.5px solid var(--gray-300);
+  background: #fff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition);
+  color: var(--gray-700);
+}
+.filter-btn:hover, .filter-btn.active { background: var(--sky); border-color: var(--sky); color: #fff; }
+
+/* ---- Testimonials ---- */
+.testimonial-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 28px;
+  border: 1px solid var(--gray-100);
+  box-shadow: var(--shadow);
+  position: relative;
+}
+.testimonial-card::before {
+  content: '"';
+  font-family: 'Syne', sans-serif;
+  font-size: 5rem;
+  line-height: 1;
+  color: var(--gold);
+  position: absolute;
+  top: 10px; left: 20px;
+  opacity: 0.2;
+}
+.testimonial-text { font-size: 0.95rem; color: var(--gray-700); line-height: 1.7; margin-bottom: 20px; font-style: italic; }
+.testimonial-author { display: flex; align-items: center; gap: 12px; }
+.testi-avatar { width: 42px; height: 42px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.95rem; color: #fff; }
+.testi-name { font-weight: 700; font-size: 0.9rem; color: var(--navy); }
+.testi-company { font-size: 0.78rem; color: var(--gray-500); }
+.stars { color: var(--gold); font-size: 0.85rem; margin-bottom: 14px; letter-spacing: 2px; }
+
+/* ---- CTA Banner ---- */
+.cta-banner {
+  background: linear-gradient(135deg, var(--sky) 0%, var(--navy) 100%);
+  padding: 72px 0;
+  text-align: center;
+  position: relative; overflow: hidden;
+}
+.cta-banner::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23fff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");
+}
+.cta-banner h2 { color: #fff; margin-bottom: 14px; }
+.cta-banner p { color: rgba(255,255,255,0.8); margin-bottom: 32px; max-width: 500px; margin-left: auto; margin-right: auto; }
+
+/* ---- Pagination ---- */
+.pagination { display: flex; gap: 8px; justify-content: center; margin-top: 48px; }
+.page-btn {
+  width: 40px; height: 40px;
+  border-radius: var(--radius);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.9rem; font-weight: 500;
+  border: 1.5px solid var(--gray-300);
+  color: var(--gray-700);
+  transition: all var(--transition);
+  cursor: pointer;
+}
+.page-btn:hover, .page-btn.active { background: var(--sky); border-color: var(--sky); color: #fff; }
+
+/* ---- Notice / Alert ---- */
+.notice {
+  padding: 14px 20px;
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+  display: flex; gap: 10px; align-items: flex-start;
+}
+.notice-info { background: rgba(45,125,210,0.08); border-left: 4px solid var(--sky); color: var(--navy); }
+.notice-success { background: rgba(56,161,105,0.08); border-left: 4px solid #38a169; color: #276749; }
+
+/* ---- Misc ---- */
+.text-center { text-align: center; }
+.text-white { color: #fff; }
+.mb-4 { margin-bottom: 16px; }
+.mb-6 { margin-bottom: 24px; }
+.mb-8 { margin-bottom: 32px; }
+.mb-12 { margin-bottom: 48px; }
+.mt-8 { margin-top: 32px; }
+.badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
+.badge-blue { background: rgba(45,125,210,0.1); color: var(--sky); }
+.badge-gold { background: rgba(240,165,0,0.12); color: #b07800; }
+.divider { border: none; border-top: 1px solid var(--gray-100); margin: 40px 0; }
+
+/* ---- Responsive ---- */
+@media (max-width: 1024px) {
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .post-layout { grid-template-columns: 1fr; }
+  .sidebar { position: static; }
+}
+@media (max-width: 768px) {
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .hero-stats { gap: 28px; flex-wrap: wrap; }
+  .nav-links, .nav-cta { display: none; }
+  .hamburger { display: block; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .hero h1 { font-size: 2rem; }
+  .hero-btns { flex-direction: column; }
+  .btn { text-align: center; }
+  .team-grid { grid-template-columns: 1fr; }
+}
+
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo">GP<span>Window</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Beranda</a></li>
+      <li><a href="../about/index.html">Tentang Kami</a></li>
+      <li><a href="../blog/index.html" class="active">Blog</a></li>
+      <li><a href="../contact/index.html">Kontak</a></li>
+    </ul>
+    <div class="nav-cta"><a href="../contact/index.html" class="btn btn-gold">Konsultasi Gratis</a></div>
+    <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="blog-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="../index.html">Beranda</a></li>
+        <li>Blog</li>
+      </ol>
+    </nav>
+    <div class="label" style="color:var(--gold);">Blog &amp; Artikel</div>
+    <h1>Tips, Inspirasi &amp; Panduan<br>Kaca &amp; Jendela Terlengkap</h1>
+    <p style="color:rgba(255,255,255,0.75);max-width:560px;margin-top:14px;">Artikel informatif dari tim ahli GPWindow — mulai dari perbandingan material, tips perawatan, hingga inspirasi desain terkini.</p>
+  </div>
+</section>
+
+<!-- Filters -->
+<section style="background:#fff;border-bottom:1px solid var(--gray-100);padding:20px 0;">
+  <div class="container">
+    <div class="blog-filters" role="list" aria-label="Filter kategori">
+      <button class="filter-btn active" data-filter="all">Semua Artikel</button>
+      <button class="filter-btn" data-filter="material">Material</button>
+      <button class="filter-btn" data-filter="desain">Desain</button>
+      <button class="filter-btn" data-filter="energi">Energi</button>
+      <button class="filter-btn" data-filter="tips">Tips &amp; Panduan</button>
+      <button class="filter-btn" data-filter="instalasi">Instalasi</button>
+      <button class="filter-btn" data-filter="komersial">Komersial</button>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Article -->
+<section class="section-sm">
+  <div class="container">
+    <div class="label">Artikel Pilihan</div>
+    <article class="card" style="display:grid;grid-template-columns:1fr 1fr;gap:0;margin-bottom:0;" data-category="material">
+      <div style="background:linear-gradient(135deg,#0B1F3A,#2D7DD2);min-height:280px;display:flex;align-items:center;justify-content:center;font-size:5rem;">🪟</div>
+      <div class="card-body" style="padding:40px;">
+        <span class="card-tag">Material</span>
+        <h2 class="card-title" style="font-size:1.5rem;"><a href="../blog/jendela-aluminium-vs-upvc/index.html">Jendela Aluminium vs UPVC: Perbandingan Lengkap 2025</a></h2>
+        <div class="card-meta">📅 12 Maret 2025 &nbsp;·&nbsp; ✍ Tim GPWindow &nbsp;·&nbsp; ⏱ 5 menit</div>
+        <p class="card-excerpt">Bingung memilih antara jendela aluminium dan UPVC? Kami kupas tuntas kelebihan, kekurangan, harga, dan rekomendasi penggunaan terbaik untuk setiap kebutuhan.</p>
+        <a href="../blog/jendela-aluminium-vs-upvc/index.html" class="btn btn-primary" style="margin-top:16px;">Baca Artikel</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- All Articles -->
+<section class="section" style="padding-top:40px;">
+  <div class="container">
+    <div class="grid-3" id="blogGrid">
+
+      <article class="card blog-card" data-category="material">
+        <div class="card-img" style="background:linear-gradient(135deg,#1E3A5F,#38a169);display:flex;align-items:center;justify-content:center;font-size:3.5rem;">💎</div>
+        <div class="card-body">
+          <span class="card-tag">Material</span>
+          <h3 class="card-title"><a href="../blog/keunggulan-kaca-tempered/index.html">Keunggulan Kaca Tempered: Kenapa Lebih Aman &amp; Kuat?</a></h3>
+          <div class="card-meta">📅 28 Jan 2025 &nbsp;·&nbsp; ⏱ 6 menit</div>
+          <p class="card-excerpt">Kaca tempered diproses dengan panas tinggi hingga 5x lebih kuat dari kaca biasa. Pelajari proses, standar SNI, dan aplikasi terbaiknya.</p>
+        </div>
+        <div class="card-footer"><a href="../blog/keunggulan-kaca-tempered/index.html" class="btn btn-outline" style="font-size:0.82rem;padding:8px 18px;">Baca</a></div>
+      </article>
+
+      <article class="card blog-card" data-category="desain">
+        <div class="card-img" style="background:linear-gradient(135deg,#163c6e,#F0A500);display:flex;align-items:center;justify-content:center;font-size:3.5rem;">🏠</div>
+        <div class="card-body">
+          <span class="card-tag">Desain</span>
+          <h3 class="card-title"><a href="../blog/desain-pintu-kaca-modern/index.html">7 Desain Pintu Kaca Modern yang Mengubah Tampilan Rumah</a></h3>
+          <div class="card-meta">📅 5 Jan 2025 &nbsp;·&nbsp; ⏱ 6 menit</div>
+          <p class="card-excerpt">Pintu kaca tidak hanya fungsional, tapi juga elemen estetika utama. Lihat 7 desain terpopuler 2025 yang bisa Anda terapkan di rumah.</p>
+        </div>
+        <div class="card-footer"><a href="../blog/desain-pintu-kaca-modern/index.html" class="btn btn-outline" style="font-size:0.82rem;padding:8px 18px;">Baca</a></div>
+      </article>
+
+      <article class="card blog-card" data-category="energi">
+        <div class="card-img" style="background:linear-gradient(135deg,#0B1F3A,#e53e3e);display:flex;align-items:center;justify-content:center;font-size:3.5rem;">☀️</div>
+        <div class="card-body">
+          <span class="card-tag">Energi</span>
+          <h3 class="card-title"><a href="../blog/kaca-film-hemat-energi/index.html">Kaca Film Solar Control: Cara Cerdas Hemat Tagihan Listrik</a></h3>
+          <div class="card-meta">📅 20 Okt 2024 &nbsp;·&nbsp; ⏱ 7 menit</div>
+          <p class="card-excerpt">Kaca film solar control bisa mereduksi panas matahari hingga 70% dan memangkas tagihan AC secara signifikan. Simak cara kerjanya.</p>
+        </div>
+        <div class="card-footer"><a href="../blog/kaca-film-hemat-energi/index.html" class="btn btn-outline" style="font-size:0.82rem;padding:8px 18px;">Baca</a></div>
+      </article>
+
+      <article class="card blog-card" data-category="material">
+        <div class="card-img" style="background:linear-gradient(135deg,#276749,#2D7DD2);display:flex;align-items:center;justify-content:center;font-size:3.5rem;">🔲</div>
+        <div class="card-body">
+          <span class="card-tag">Material</span>
+          <h3 class="card-title"><a href="../blog/jendela-upvc-terbaik/index.html">Jendela UPVC: Pilihan Terbaik untuk Rumah Modern &amp; Hemat Energi</a></h3>
+          <div class="card-meta">📅 8 Agt 2024 &nbsp;·&nbsp; ⏱ 8 menit</div>
+          <p class="card-excerpt">UPVC menawarkan insulasi termal dan akustik terbaik di kelasnya. Kami bedah semua yang perlu Anda ketahui sebelum membeli.</p>
+        </div>
+        <div class="card-footer"><a href="../blog/jendela-upvc-terbaik/index.html" class="btn btn-outline" style="font-size:0.82rem;padding:8px 18px;">Baca</a></div>
+      </article>
+
+      <article class="card blog-card" data-category="tips">
+        <div class="card-img" style="background:linear-gradient(135deg,#553c9a,#2D7DD2);display:flex;align-items:center;justify-content:center;font-size:3.5rem;">🧹</div>
+        <div class="card-body">
+          <span class="card-tag">Tips</span>
+          <h3 class="card-title"><a href="../blog/cara-merawat-jendela-aluminium/index.html">Cara Merawat Jendela Aluminium agar Tahan Puluhan Tahun</a></h3>
+          <div class="card-meta">📅 15 Jun 2024 &nbsp;·&nbsp; ⏱ 5 menit</div>
+          <p class="card-excerpt">Dengan perawatan yang tepat, jendela aluminium bisa bertahan lebih dari 20 tahun. Panduan lengkap membersihkan, melumasi, dan menjaga kondisinya.</p>
+        </div>
+        <div class="card-footer"><a href="../blog/cara-merawat-jendela-aluminium/index.html" class="btn btn-outline" style="font-size:0.82rem;padding:8px 18px;">Baca</a></div>
+      </article>
+
+      <article class="card blog-card" data-category="instalasi">
+        <div class="card-img" style="background:linear-gradient(135deg,#744210,#F0A500);display:flex;align-items:center;justify-content:center;font-size:3.5rem;">🔧</div>
+        <div class="card-body">
+          <span class="card-tag">Instalasi</span>
+          <h3 class="card-title"><a href="../blog/panduan-instalasi-kaca-partisi/index.html">Panduan Lengkap Instalasi Kaca Partisi Kantor</a></h3>
+          <div class="card-meta">📅 22 Apr 2024 &nbsp;·&nbsp; ⏱ 9 menit</div>
+          <p class="card-excerpt">Kaca partisi bisa mengubah ruang kantor menjadi lebih profesional dan produktif. Pelajari tahapan instalasi, biaya, dan tips memilih desain terbaik.</p>
+        </div>
+        <div class="card-footer"><a href="../blog/panduan-instalasi-kaca-partisi/index.html" class="btn btn-outline" style="font-size:0.82rem;padding:8px 18px;">Baca</a></div>
+      </article>
+
+      <article class="card blog-card" data-category="komersial">
+        <div class="card-img" style="background:linear-gradient(135deg,#1A365D,#38a169);display:flex;align-items:center;justify-content:center;font-size:3.5rem;">🏢</div>
+        <div class="card-body">
+          <span class="card-tag">Komersial</span>
+          <h3 class="card-title"><a href="../blog/curtain-wall-gedung-modern/index.html">Curtain Wall: Sistem Fasad Kaca untuk Gedung Modern</a></h3>
+          <div class="card-meta">📅 10 Feb 2024 &nbsp;·&nbsp; ⏱ 10 menit</div>
+          <p class="card-excerpt">Curtain wall adalah solusi fasad gedung bertingkat yang memadukan estetika dan performa termal. Panduan lengkap dari spesifikasi hingga instalasi.</p>
+        </div>
+        <div class="card-footer"><a href="../blog/curtain-wall-gedung-modern/index.html" class="btn btn-outline" style="font-size:0.82rem;padding:8px 18px;">Baca</a></div>
+      </article>
+
+      <article class="card blog-card" data-category="desain">
+        <div class="card-img" style="background:linear-gradient(135deg,#2D3748,#2D7DD2);display:flex;align-items:center;justify-content:center;font-size:3.5rem;">🛁</div>
+        <div class="card-body">
+          <span class="card-tag">Desain</span>
+          <h3 class="card-title"><a href="../blog/shower-kaca-kamar-mandi/index.html">Shower Kaca: Transformasi Kamar Mandi Menjadi Spa Mewah</a></h3>
+          <div class="card-meta">📅 5 Nov 2024 &nbsp;·&nbsp; ⏱ 7 menit</div>
+          <p class="card-excerpt">Shower enclosure berbahan kaca tempered menghadirkan nuansa hotel bintang lima di rumah Anda. Pilihan desain, ketebalan kaca, dan estimasi biaya.</p>
+        </div>
+        <div class="card-footer"><a href="../blog/shower-kaca-kamar-mandi/index.html" class="btn btn-outline" style="font-size:0.82rem;padding:8px 18px;">Baca</a></div>
+      </article>
+
+      <article class="card blog-card" data-category="energi">
+        <div class="card-img" style="background:linear-gradient(135deg,#1a4a2e,#F0A500);display:flex;align-items:center;justify-content:center;font-size:3.5rem;">🌿</div>
+        <div class="card-body">
+          <span class="card-tag">Energi</span>
+          <h3 class="card-title"><a href="../blog/kaca-double-glazing-indonesia/index.html">Kaca Double Glazing: Revolusi Insulasi Termal untuk Indonesia</a></h3>
+          <div class="card-meta">📅 18 Jun 2025 &nbsp;·&nbsp; ⏱ 8 menit</div>
+          <p class="card-excerpt">Double glazing mulai populer di Indonesia sebagai solusi insulasi panas dan suara. Apakah worth it untuk iklim tropis? Kami bedah manfaat dan biayanya.</p>
+        </div>
+        <div class="card-footer"><a href="../blog/kaca-double-glazing-indonesia/index.html" class="btn btn-outline" style="font-size:0.82rem;padding:8px 18px;">Baca</a></div>
+      </article>
+
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination" aria-label="Navigasi halaman">
+      <button class="page-btn active" aria-current="page" aria-label="Halaman 1">1</button>
+      <button class="page-btn" aria-label="Halaman 2">2</button>
+      <button class="page-btn" aria-label="Halaman 3">3</button>
+      <button class="page-btn" aria-label="Halaman selanjutnya">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="section-sm" style="background:var(--gray-100);border-top:1px solid var(--gray-300);">
+  <div class="container" style="max-width:560px;text-align:center;">
+    <div class="label">Newsletter</div>
+    <h3 style="margin-bottom:8px;">Jangan Lewatkan Artikel Terbaru</h3>
+    <p style="margin-bottom:20px;font-size:0.9rem;">Berlangganan dan dapatkan artikel informatif seputar kaca, jendela, dan desain bangunan langsung ke inbox Anda.</p>
+    <form id="newsletterForm" style="display:flex;gap:12px;" aria-label="Form newsletter">
+      <input type="email" placeholder="Email Anda..." required aria-label="Alamat email" style="flex:1;padding:11px 16px;border:1.5px solid var(--gray-300);border-radius:6px;font-family:'Inter',sans-serif;font-size:0.9rem;outline:none;">
+      <button type="submit" class="btn btn-primary">Daftar</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>GP<span>Window</span></h3>
+        <p>Distributor dan installer kaca, jendela, dan pintu aluminium premium terpercaya di Indonesia sejak 2010.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Kategori Blog</h4>
+        <ul>
+          <li><a href="../blog/index.html">Material</a></li>
+          <li><a href="../blog/index.html">Desain</a></li>
+          <li><a href="../blog/index.html">Energi</a></li>
+          <li><a href="../blog/index.html">Tips &amp; Panduan</a></li>
+          <li><a href="../blog/index.html">Komersial</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Perusahaan</h4>
+        <ul>
+          <li><a href="../about/index.html">Tentang Kami</a></li>
+          <li><a href="../blog/index.html">Blog</a></li>
+          <li><a href="../contact/index.html">Kontak</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontak</h4>
+        <ul>
+          <li><a href="tel:+622155501234">📞 021-5550-1234</a></li>
+          <li><a href="mailto:info@gpwindow.com">✉ info@gpwindow.com</a></li>
+          <li><span style="color:rgba(255,255,255,0.5);">📍 Jakarta Barat 11740</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 GPWindow. Semua hak dilindungi undang-undang.</p>
+      <p>Dibuat dengan ❤ di Jakarta, Indonesia</p>
+    </div>
+  </div>
+</footer>
+
+<button id="scrollTop" aria-label="Kembali ke atas">↑</button>
+<script>
+// GPWindow — Main JS
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  // ---- Mobile nav toggle ----
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+  const navCta = document.querySelector('.nav-cta');
+  if (hamburger) {
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      if (navLinks) navLinks.classList.toggle('open');
+      if (navCta) navCta.classList.toggle('open');
+    });
+  }
+
+  // ---- Active nav link ----
+  const currentPath = window.location.pathname;
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    if (link.getAttribute('href') === currentPath || 
+        (currentPath.includes('/blog') && link.getAttribute('href').includes('/blog'))) {
+      link.classList.add('active');
+    }
+  });
+
+  // ---- Comment form submission ----
+  const commentForm = document.getElementById('commentForm');
+  if (commentForm) {
+    commentForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('commentName')?.value;
+      const comment = document.getElementById('commentText')?.value;
+      if (!name || !comment) return;
+
+      const list = document.getElementById('commentList');
+      const colors = ['#2D7DD2','#F0A500','#38a169','#e53e3e','#805AD5'];
+      const color = colors[Math.floor(Math.random() * colors.length)];
+      const initials = name.split(' ').map(w => w[0]).join('').toUpperCase().slice(0,2);
+      const now = new Date().toLocaleDateString('id-ID', {day:'numeric',month:'long',year:'numeric'});
+
+      const item = document.createElement('div');
+      item.className = 'comment-item';
+      item.style.animation = 'fadeIn 0.4s ease';
+      item.innerHTML = `
+        <div class="comment-header">
+          <div class="comment-avatar" style="background:${color}">${initials}</div>
+          <div>
+            <div class="comment-name">${escapeHtml(name)} <span class="comment-verified">✓ Baru</span></div>
+            <div class="comment-date">${now}</div>
+          </div>
+        </div>
+        <div class="comment-body">${escapeHtml(comment)}</div>
+      `;
+      if (list) {
+        list.prepend(item);
+        const countEl = document.getElementById('commentCount');
+        if (countEl) countEl.textContent = parseInt(countEl.textContent || 0) + 1;
+      }
+      commentForm.reset();
+      showToast('Komentar Anda berhasil dikirim!');
+    });
+  }
+
+  // ---- Blog filters ----
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      document.querySelectorAll('.blog-card').forEach(card => {
+        if (filter === 'all' || card.dataset.category === filter) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // ---- Newsletter form ----
+  const newsletterForm = document.getElementById('newsletterForm');
+  if (newsletterForm) {
+    newsletterForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      showToast('Terima kasih! Anda telah berlangganan newsletter kami.');
+      newsletterForm.reset();
+    });
+  }
+
+  // ---- Contact form ----
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      showToast('Pesan Anda telah terkirim. Kami akan menghubungi Anda segera!');
+      contactForm.reset();
+    });
+  }
+
+  // ---- Scroll reveal ----
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // ---- Scroll to top button ----
+  const scrollBtn = document.getElementById('scrollTop');
+  if (scrollBtn) {
+    window.addEventListener('scroll', () => {
+      scrollBtn.style.opacity = window.scrollY > 400 ? '1' : '0';
+      scrollBtn.style.pointerEvents = window.scrollY > 400 ? 'auto' : 'none';
+    });
+    scrollBtn.addEventListener('click', () => window.scrollTo({top: 0, behavior: 'smooth'}));
+  }
+
+});
+
+function escapeHtml(text) {
+  const div = document.createElement('div');
+  div.appendChild(document.createTextNode(text));
+  return div.innerHTML;
+}
+
+function showToast(msg) {
+  const toast = document.createElement('div');
+  toast.style.cssText = `
+    position:fixed;bottom:28px;right:28px;
+    background:#0B1F3A;color:#fff;
+    padding:14px 22px;border-radius:8px;
+    font-size:0.9rem;font-family:'Inter',sans-serif;
+    box-shadow:0 8px 24px rgba(0,0,0,0.2);
+    z-index:9999;animation:fadeIn 0.3s ease;
+    border-left:4px solid #F0A500;
+  `;
+  toast.textContent = msg;
+  document.body.appendChild(toast);
+  setTimeout(() => { toast.style.opacity = '0'; toast.style.transition = '0.3s'; setTimeout(() => toast.remove(), 300); }, 3500);
+}
+
+// CSS animations injected
+const styleTag = document.createElement('style');
+styleTag.textContent = `
+@keyframes fadeIn { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+.reveal { opacity:0; transform:translateY(24px); transition: opacity 0.55s ease, transform 0.55s ease; }
+.reveal.revealed { opacity:1; transform:translateY(0); }
+.hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+@media (max-width: 768px) {
+  .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 68px; left: 0; right: 0; background: rgba(11,31,58,0.98); padding: 16px; gap: 4px; }
+  .nav-cta.open { display: block; position: absolute; top: 68px; left: 0; right: 0; padding: 0 16px 16px; background: rgba(11,31,58,0.98); }
+}
+#scrollTop { position:fixed;bottom:80px;right:24px;width:44px;height:44px;background:var(--sky);color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.2rem;opacity:0;transition:opacity 0.3s;z-index:999;box-shadow:0 4px 16px rgba(45,125,210,0.4); }
+#scrollTop:hover { background:var(--navy); }
+`;
+document.head.appendChild(styleTag);
+
+</script>
+</body>
+</html>
